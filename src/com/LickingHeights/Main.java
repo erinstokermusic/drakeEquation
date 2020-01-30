@@ -28,7 +28,11 @@ double f_i;
 double f_c;
 int L;
 
+N = rStar * f_p * f_l * f_i * f_c * L;
 
+
+System.out.println("The number of intelligent" +
+        "species that are out there\nand can communicate with us is" + N)''
     }
 
 }
