@@ -35,6 +35,9 @@ keyboard = new Scanner(System.in);
 
 System.out.println("Give me the rate at which stars form in the Milky Way.");
 rStar = keyboard.nextLine();
+System.out.println("Give me the fraction of those stars that have planets orbiting them.");
+f_p = keyboard.nextLine();
+
 N = rStar * f_p * f_l * f_i * f_c * L;
 
 
