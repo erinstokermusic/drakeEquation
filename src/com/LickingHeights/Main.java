@@ -39,7 +39,9 @@ System.out.println("Give me the fraction of those stars that have planets orbiti
 f_p = keyboard.nextLine();
 System.out.println("Give me the fraction of those planets that reside in the goldilocks zone.");
 numberOfExoplanets = keyboard.nextLine();
-System.out.println("")
+System.out.println("Give me the fraction of those planets that have life.");
+f_l = keyboard.nextLine();
+
 N = rStar * f_p * f_l * f_i * f_c * L;
 
 
