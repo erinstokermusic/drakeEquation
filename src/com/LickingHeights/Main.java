@@ -21,7 +21,7 @@ fi = 1 (100% of which will develop intelligent life)
 fc = 0.1 to 0.2 (10–20% of which will be able to communicate)
 L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,000,000 years)
  */
-int N;
+double N;
 int rStar;
 double f_p;
 int numberOfExoplanets;
@@ -35,23 +35,27 @@ keyboard = new Scanner(System.in);
 
 System.out.println("Give me the rate at which stars form in the Milky Way.");
 rStar = keyboard.nextInt();
-System.out.println("Give me the fraction of those stars that have planets orbiting them.");
+System.out.println("Give me the percentage (in decimal form) of those stars that have planets orbiting them.");
 f_p = keyboard.nextDouble();
-System.out.println("Give me the fraction of those planets that reside in the goldilocks zone.");
+System.out.println("Give me the number of those planets that reside in the goldilocks zone.");
 numberOfExoplanets = keyboard.nextInt();
-System.out.println("Give me the fraction of those planets that have life.");
+System.out.println("Give me the percentage (in decimal form) of those planets in the goldilocks zone that have life.");
 f_l = keyboard.nextDouble();
-System.out.println("Give me the fraction of those planets with life that have " +
+System.out.println("Give me the percentage (in decimal form) of those planets with life that have " +
         "the capacity to develop intelligent life.");
 f_i = keyboard.nextDouble();
-System.out.println("Give me the fraction of that intelligent life that" +
-        " will be able to communicate in a way we can understand");
+System.out.println("Give me the percentage (in decimal form) of that intelligent life that" +
+        " will be able to communicate in a way we can understand.");
 f_c = keyboard.nextDouble();
-N = rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L;
+System.out.println("Give me the number, in years, of how long that intelligent " +
+        "life will be able to communicate in a way we understand.");
+L = keyboard.nextInt();
+
+N = (rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L);
 
 
-System.out.println("The number of intelligent" +
-        "species that are out there\nand can communicate with us is" + N);
+System.out.println("The number of intelligent " +
+        "species that are out there\nand can communicate with us is " + N);
     }
 
 }
