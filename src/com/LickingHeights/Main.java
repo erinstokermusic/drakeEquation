@@ -44,9 +44,9 @@ f_l = keyboard.nextDouble();
 System.out.println("Give me the fraction of those planets with life that have " +
         "the capacity to develop intelligent life.");
 f_i = keyboard.nextDouble();
-// System.out.println("Give me the fraction of that intelligent life that" +
-      //  " will be able to communicate in a way we can understand");
-
+System.out.println("Give me the fraction of that intelligent life that" +
+        " will be able to communicate in a way we can understand");
+f_c = keyboard.nextDouble();
 N = rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L;
 
 
