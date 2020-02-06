@@ -24,7 +24,7 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
 double N;
 int rStar;
 double f_p;
-int numberOfExoplanets;
+double numberOfExoplanets;
 double f_l;
 double f_i;
 double f_c;
@@ -38,7 +38,7 @@ rStar = keyboard.nextInt();
 System.out.println("Give me the percentage (in decimal form) of those stars that have planets orbiting them.");
 f_p = keyboard.nextDouble();
 System.out.println("Give me the number of those planets that reside in the goldilocks zone.");
-numberOfExoplanets = keyboard.nextInt();
+numberOfExoplanets = keyboard.nextDouble();
 System.out.println("Give me the percentage (in decimal form) of those planets in the goldilocks zone that have life.");
 f_l = keyboard.nextDouble();
 System.out.println("Give me the percentage (in decimal form) of those planets with life that have " +
